@@ -50,6 +50,11 @@ function neorg
   set workspace $argv[1]
 
   switch $workspace
+  case --help -h
+    echo "Valid options for workspaces are:"
+    echo -e "\t- Personal workspace (default): Default, default, Personal, personal"
+    echo -e "\t- University workspace: University, university, Uni, uni"
+    echo -e "\nEntering just 'neorg' will open the default workspace, that being the personal workspace."
   case University university uni Uni
     echo "Opening university neorg workspace..."
     sleep .4s
