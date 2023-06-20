@@ -54,11 +54,16 @@ function neorg
     echo "Valid options for workspaces are:"
     echo -e "\t- Personal workspace (default): Default, default, Personal, personal"
     echo -e "\t- University workspace: University, university, Uni, uni"
+    echo -e "\t- Journaling workspace: Journal, journal"
     echo -e "\nEntering just 'neorg' will open the default workspace, that being the personal workspace."
   case University university uni Uni
     echo "Opening university neorg workspace..."
     sleep .4s
     nvim -c "Neorg workspace university" -c "cd %:p:h"
+  case Journal journal
+    echo "Opening journal neorg workspace..."
+    sleep .4s
+    nvim -c "Neorg workspace journal" -c "cd %:p:h"
   case Default default personal Personal '*'
     echo "Opening personal neorg workspace..."
     sleep .4s
