@@ -1,5 +1,5 @@
 set EDITOR nvim
-set SHELL $(which fish)
+set SHELL (which fish)
 set GOROOT "$HOME/.go"
 set GOPATH "$HOME/Code/go"
 
